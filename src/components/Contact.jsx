@@ -1,24 +1,23 @@
-// import dotenv from 'dotenv'
 import React,{ useRef } from 'react'
-import emailjs from '@emailjs/browser';
-
+import emailjs from '@emailjs/browser'
+                                    
 function Contact() {
-  const form = useRef();
-  // dotenv.config()
+  const form = useRef()
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('gmail', 'service_lu1of8n', 'template_7ukvip4', form.current, 'vEjBKvvVFAosxOS7A')
+    emailjs.sendForm('service_lu1of8n', 'template_7ukvip4', form.current, 'vEjBKvvVFAosxOS7A')     
       .then((result) => {
-          alert("Message Successfully sent!");
           window.location.reload(false)
+          alert("Message Successfully sent!")
+          e.preventDefault();
       }, (error) => {
-          alert("Failed to Send Message");
-      });
-  };
+          alert("Failed to Send Message")
+      }
+    )
+  }
   return (
     <div className="contact" id='contact'>
-      <h2 className="title">Contact Us</h2>
+      <h2 className="heading">Contact Us</h2>
       <div className="contact-form">
         <form className="form" ref={form} onSubmit={sendEmail}>
           <ul>
@@ -34,7 +33,9 @@ function Contact() {
             <li>
               <textarea placeholder="Message" data-aos="fade-up" data-aos-duration="1500" className="forth media" name="message" required></textarea>
             </li>
-            <li><input type="submit" data-aos="fade-up" data-aos-duration="1500" className="button" value="SEND" /></li>
+            <li>
+              <input type="submit" data-aos="fade-up" data-aos-duration="1500" className="button" value="SEND" />
+            </li>
           </ul>
         </form>
       </div>

@@ -9,7 +9,7 @@ function Testamoneals() {
       <div className="overlay">
           <div className="special-title">our claints reviews</div>
           <div className="container">
-            <div className="card" data-aos="zoom-out-right" data-aos-duration="1500">
+            <div className="first-card" data-aos="zoom-out-right" data-aos-duration="1500">
               <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="" />
               <div className="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni rerum aliquam! Temporibus dolores 
@@ -20,7 +20,7 @@ function Testamoneals() {
                 <AiFillInstagram />
               </div>
             </div>
-            <div className="card" data-aos="zoom-out-right" data-aos-duration="1500">
+            <div className="second-card" data-aos="zoom-out-right" data-aos-duration="1500">
               <img src="https://randomuser.me/api/portraits/men/20.jpg" alt="" />
               <div className="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni rerum aliquam! Temporibus dolores 
@@ -31,7 +31,7 @@ function Testamoneals() {
                 <AiFillInstagram />
               </div>
             </div>
-            <div className="card" data-aos="zoom-out-right" data-aos-duration="1500">
+            <div className="third-card" data-aos="zoom-out-right" data-aos-duration="1500">
               <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="" />
               <div className="card-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis magni rerum aliquam! Temporibus dolores 
